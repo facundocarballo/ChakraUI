@@ -51,7 +51,7 @@ export const NavBar = ({props}: TheINavBar) => {
                     }
                 </Box>
                 <Button onClick={toggleColorMode} variant='headers'>
-                    {isDark ? <SunIcon/> : <MoonIcon/>}
+                    { isDark ? <SunIcon/> : <MoonIcon/>}
                 </Button>
                 <Box display={{lg: 'none', md:'flex', sm: 'flex', base: 'flex'}}>
                     <IconButton

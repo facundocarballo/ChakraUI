@@ -1,7 +1,6 @@
 import { useColorModeValue } from "@chakra-ui/react";
 
-
-export const ButtonStyles = {
+export const ButtonSyles = {
     variants: {
         headers: () => ({
             bg: useColorModeValue('gray.200', 'gray.800'),
@@ -10,8 +9,8 @@ export const ButtonStyles = {
             _hover: {
                 boxShadow: 'md',
                 transform: 'scale(1.02)',
-                bg: useColorModeValue('gray.300', 'gray.600')
+                bg: useColorModeValue('gray.300', 'gray.700')
             }
-        })
+        }),
     }
-}
+};

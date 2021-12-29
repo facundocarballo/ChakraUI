@@ -28,7 +28,6 @@ export const VHStack: NextPage = () => {
             <VStack h='full' w='100px' bg='green.400'></VStack>
             <VStack h='full' w='100px' bg='purple.400'></VStack>
             <VStack h='full' w='100px' bg='yellow.400'></VStack>
-
         </HStack>
     );
 };

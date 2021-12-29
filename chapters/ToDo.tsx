@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import {VStack, HStack, Heading, Spacer, Input, IconButton, Box, Divider, Text} from '@chakra-ui/react';
+import {VStack, HStack, Heading, Spacer, Input, IconButton, Box, Divider, Text, useColorModeValue} from '@chakra-ui/react';
 import {AddIcon, CheckIcon, DeleteIcon} from '@chakra-ui/icons'
+
+
 
 export const ToDo = () => {
     const [value, setValue] = useState('');
@@ -18,7 +20,7 @@ export const ToDo = () => {
             }
         })
     };
-
+    const bgInput = useColorModeValue('gray.300', 'gray.700');
     return (
         <VStack w='full' h='full'>
             <HStack w='full'>
@@ -29,7 +31,7 @@ export const ToDo = () => {
                 onChange={handleChange}
                 placeholder='New Tasks...'
                 w='400px'
-                bg='gray.500'
+                bg={bgInput}
                 />
                 <IconButton
                 icon = {<AddIcon/>}
